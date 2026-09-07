@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framey - Fotografiranje</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/logotip.svg" alt="Framey Logo"></a>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Otvori izbornik">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="o_nama.html">O nama</a></li>
+                <li class="dropdown">
+                    <a href="usluge.html" class="dropbtn">Usluge &#9662;</a>
+                    <ul class="dropdown-content">
+                        <li><a href="snimanje.html">Snimanje</a></li>
+                        <li><a href="fotografiranje.html">Fotografiranje</a></li>
+                    </ul>
+                </li>
+                <li><a href="proces.html">Proces</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content-section text-center">
+        <h1>profesionalno fotografiranje</h1>
+    </section>
+
+    <section class="content-section text-center">
+        <div class="cta-card"><img src="images/plaza.jpg" alt="Profesionalno fotografiranje"></div>
+        <br><br>
+
+        <p class="subtitle">Profesionalna fotografija omogućuje da prikazujete trenutke i prostore u njihovom najboljem izdanju.
+            Kroz pažljivo odabrane kadrove, osvjetljenje i kompoziciju stvaramo vizuale koji privlače pažnju i ostavljaju jak dojam.
+        </p>
+
+    </section>
+    <hr class="divider">
+
+    <section class="content-section text-center">
+        <h2>ŠTO FOTOGRAFIRAMO?</h2>
+        <p class="subtitle">Pravi kadar može istaknuti detalj, prenijeti emociju ili stvoriti novu vizualnu priču.<br>
+            Svakom fotografiranju pristupamo s ciljem da pronađemo estetski i funkcionalno najbolji kut.</p>
+
+        <div class="vertical-line"></div>
+
+        <section class="split-section">
+            <div class="split-text">
+                <h2>HRANA I UGOSTITELJSTVO</h2>
+                <p>
+                    Stvaramo privlačne i apetitlih fotografije jela, pića i ambijenta restorana ili kafića.
+                </p>
+                <p>
+                    Kroz detalje, teksture i prirodno svjetlo ističemo kvalitetu vaše ponude i gradimo vizualni identitet vašeg jelovnika i društvenih mreža.
+                </p>
+            </div>
+
+            <div class="split-image">
+                <img src="images/hrana.jpg" alt="Fotografiranje hrane i ugostiteljstva">
+            </div>
+        </section>
+
+        <div class="vertical-line"></div>
+
+        <section class="split-section">
+            <div class="split-image">
+                <img src="images/cres.jpg" alt="Fotografiranje nekretnina i lokacija">
+            </div>
+            <div class="split-text">
+                <h2>NEKRETNINE I LOKACIJE</h2>
+                <p>
+                    Prikaz prostora, arhitekture, dizajna interijera i eksterijera.
+                </p>
+                <p>
+                    Naglašavamo prostranost, estetiku i funkcionalnost nekretnina kako bismo ih prezentirali u najboljem izdanju za prodaju, najam ili promociju.
+                </p>
+            </div>
+        </section>
+
+        <div class="vertical-line"></div>
+
+        <section class="split-section">
+            <div class="split-text">
+                <h2>DOGAĐAJI</h2>
+                <p>
+                    Spontano i profesionalno bilježimo ključne trenutke, atmosferu i emocije privatnih i poslovnih događaja.
+                </p>
+                <p>
+                    Stvaramo trajnu uspomenu i kvalitetan vizualni materijal koji prenosi energiju vašeg Eventa.
+                </p>
+            </div>
+
+            <div class="split-image">
+                <img src="images/concert.jpg" alt="Fotografiranje događaja">
+            </div>
+        </section>
+
+    </section>
+
+    <hr class="divider">
+
+    <section class="content-section">
+        <div class="cta-card">
+            <img src="images/footer.jpg" alt="Pozadina">
+            <div class="cta-content">
+                <h2>SPREMNI ZA NOVU PERSPEKTIVU?</h2>
+                <p>Kontaktirajte nas i dogovorite fotografiranje već danas.</p>
+                <a href="kontakt.html" class="btn btn-white">KONTAKTIRAJTE NAS</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="images/logotip.svg" alt="Framey Logo">
+        </div>
+        <ul class="footer-links">
+            <li><a href="o_nama.html">O nama</a></li>
+            <li><a href="usluge.html">Usluge</a></li>
+            <li><a href="proces.html">Proces</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framey - O nama</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/logotip.svg" alt="Framey Logo"></a>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Otvori izbornik">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="o_nama.html">O nama</a></li>
+                <li class="dropdown">
+                    <a href="usluge.html" class="dropbtn">Usluge &#9662;</a>
+                    <ul class="dropdown-content">
+                        <li><a href="snimanje.html">Snimanje</a></li>
+                        <li><a href="fotografiranje.html">Fotografiranje</a></li>
+                    </ul>
+                </li>
+                <li><a href="proces.html">Proces</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="content-section text-center">
+        <h1>O NAMA</h1>
+
+        <div class="video-container" id="videoWrapper">
+            <img src="images/put_vir.jpg" alt="Video cover" class="video-poster">
+
+            <button type="button" class="play-btn" onclick="pokreniVideo()">
+                <span class="play-icon">►</span> Upoznaj nas
+            </button>
+
+            <video id="mojVideo" class="video-element" controls>
+                <source src="images/teovideo.mp4" type="video/mp4">
+                Vaš preglednik ne podržava video zapis.
+            </video>
+        </div>
+
+        <script>
+            function pokreniVideo() {
+                var wrapper = document.getElementById('videoWrapper');
+                var video = document.getElementById('mojVideo');
+
+                wrapper.classList.add('playing');
+                video.play();
+            }
+        </script>
+
+        <p class="subtitle">Framey nastaje iz želje da važne trenutke i objekte prikažemo kroz bezvremenske vizuale.
+            Kroz objektiv naših kamera bilježimo prostore, ljude, emocije i priče koje dobivaju posebnu vrijednost.
+            Spajamo vrhunsku opremu, preciznost i kreativni pristup kako bismo stvorili sadržaj koji privlači
+            pažnju i ostavlja dojam.<br><br>
+            Za nas svaki kadar počinje s dobrom pripremom. Razmišljamo o kompoziciji, svjetlu, pokretu i
+            detaljima koji čine razliku između obične snimke i vizuala koji priča priču.
+            Bilo da se radi o fotografiranju portreta, nekretnina, događaja ili snimanju promotivnog sadržaja,
+            svakom projektu pristupamo s istim ciljem — pronaći najbolju perspektivu.</p>
+
+    </section>
+    <hr class="divider">
+
+    <section class="content-section text-center">
+        <h2>Pogled kroz naš objektiv.</h2>
+        <p class="subtitle">Prave stvari jednostavno izgledaju drugačije kada im pristupite s pravom vizijom. Profesionalna fotografija i video omogućuju nam da istaknemo ljepotu detalja, naglasimo karakter objekta i zabilježimo emociju koja ostaje trajno sačuvana.<br><br>
+            Zato ne snimamo samo prolazne trenutke. Tražimo kadar koji najbolje prenosi atmosferu, ideju i priču onoga što fotografiramo i snimamo.</p>
+        <br>
+
+
+        <div class="cards-grid grid-3">
+            <div class="card"><img src="images/hrana.jpg" alt="Rad 1"></div>
+            <div class="card"><img src="images/pogled.jpg" alt="Rad 2"></div>
+            <div class="card"><img src="images/cres.jpg" alt="Rad 3"></div>
+
+        </div>
+
+    </section>
+    <hr class="divider">
+
+    <section class="content-section">
+        <div class="cta-card">
+            <img src="images/footer.jpg" alt="Pozadina">
+            <div class="cta-content">
+                <h2>SPREMNI ZA NOVU PERSPEKTIVU?</h2>
+                <p>Kontaktirajte nas i dogovorite fotografiranje ili snimanje već danas.</p>
+                <a href="kontakt.html" class="btn btn-white">KONTAKTIRAJTE NAS</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="images/logotip.svg" alt="Framey Logo">
+        </div>
+        <ul class="footer-links">
+            <li><a href="o_nama.html">O nama</a></li>
+            <li><a href="usluge.html">Usluge</a></li>
+            <li><a href="proces.html">Proces</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

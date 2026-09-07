@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framey - Kontakt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/logotip.svg" alt="Framey Logo"></a>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Otvori izbornik">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="o_nama.html">O nama</a></li>
+                <li class="dropdown">
+                    <a href="usluge.html" class="dropbtn">Usluge &#9662;</a>
+                    <ul class="dropdown-content">
+                        <li><a href="snimanje.html">Snimanje</a></li>
+                        <li><a href="fotografiranje.html">Fotografiranje</a></li>
+                    </ul>
+                </li>
+                <li><a href="proces.html">Proces</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content-section text-center">
+        <h1>Spremni za<br>novu perspektivu?</h1>
+    </section>
+
+    <section class="content-section text-center">
+
+        <p class="subtitle">Imate projekt, ideju ili trenutak koji želite zabilježiti profesionalnim kadrovima?<br>
+            Javite nam se putem e-maila i zajedno ćemo pronaći najbolji pristup vašem projektu.</p>
+
+    </section>
+    <br><br>
+    <section class="contact-box">
+        <p class="contact-title">KONTAKTIRAJTE NAS:</p>
+        <a href="mailto:kontakt@framey.hr" class="contact-email">kontakt@framey.hr</a>
+    </section>
+    <hr class="divider">
+
+    <section class="content-section text-center">
+        <h2>Pratite naš rad.</h2>
+        <p class="subtitle">Za još radova, novih projekata i iza kulisa fotografiranja i snimanja,<br>
+            pratite Framey na Instagramu.</p>
+        <br>
+        <br>
+        <div class="icon-image">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/instagram.png" alt="Instagram profil">
+            </a>
+        </div>
+
+    </section>
+    <hr class="divider">
+
+
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="images/logotip.svg" alt="Framey Logo">
+        </div>
+        <ul class="footer-links">
+            <li><a href="o_nama.html">O nama</a></li>
+            <li><a href="usluge.html">Usluge</a></li>
+            <li><a href="proces.html">Proces</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

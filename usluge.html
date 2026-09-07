@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framey - Usluge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/logotip.svg" alt="Framey Logo"></a>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Otvori izbornik">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="o_nama.html">O nama</a></li>
+                <li class="dropdown">
+                    <a href="usluge.html" class="dropbtn">Usluge &#9662;</a>
+                    <ul class="dropdown-content">
+                        <li><a href="snimanje.html">Snimanje</a></li>
+                        <li><a href="fotografiranje.html">Fotografiranje</a></li>
+                    </ul>
+                </li>
+                <li><a href="proces.html">Proces</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content-section text-center">
+        <h1>USLUGE</h1>
+    </section>
+
+    <section class="content-section text-center">
+
+        <p class="subtitle">Svaki projekt zahtijeva drugačiji pristup, ali jedan je cilj uvijek isti — stvoriti
+            vizual<br>
+            koji će privući pažnju i prenijeti priču na pravi način. Framey nudi profesionalno snimanje i
+            fotografiranje za projekte koji zaslužuju vrhunsku prezentaciju.</p>
+
+    </section>
+    <hr class="divider">
+
+    <section class="content-section text-center">
+        <h2>snimanje</h2>
+        <p class="subtitle">Pokret daje prostoru i priči novu dimenziju.<br>
+            Kreiramo dinamične video zapise za nekretnine, lokacije i događaje. Svakom snimanju pristupamo s jasnom idejom i fokusom na kadar, pokret i atmosferu.</p>
+
+
+        <div class="cta-card"><img src="images/pogled.jpg" alt="Video snimanje"></div>
+        <br><br>
+        <a href="snimanje.html" class="btn btn-outline">SAZNAJTE VIŠE</a>
+
+
+    </section>
+
+    <hr class="divider">
+    <section class="content-section text-center">
+        <h2>fotografiranje</h2>
+        <p class="subtitle">Jedan kadar može ispričati cijelu priču.<br>
+            Profesionalnom fotografijom ističemo detalje hrane i ugostiteljstva, prostranost nekretnina te ključne trenutke vaših događaja.</p>
+
+
+        <div class="cta-card"><img src="images/plaza.jpg" alt="Profesionalno fotografiranje"></div>
+        <br><br>
+        <a href="fotografiranje.html" class="btn btn-outline">SAZNAJTE VIŠE</a>
+
+
+    </section>
+    <hr class="divider">
+
+
+    <section class="content-section">
+        <div class="cta-card">
+            <img src="images/footer.jpg" alt="Pozadina">
+            <div class="cta-content">
+                <h2>SPREMNI ZA NOVU PERSPEKTIVU?</h2>
+                <p>Kontaktirajte nas i dogovorite snimanje ili fotografiranje već danas.</p>
+                <a href="kontakt.html" class="btn btn-white">KONTAKTIRAJTE NAS</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="images/logotip.svg" alt="Framey Logo">
+        </div>
+        <ul class="footer-links">
+            <li><a href="o_nama.html">O nama</a></li>
+            <li><a href="usluge.html">Usluge</a></li>
+            <li><a href="proces.html">Proces</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

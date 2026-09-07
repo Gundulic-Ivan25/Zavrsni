@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framey - Snimanje</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/logotip.svg" alt="Framey Logo"></a>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Otvori izbornik">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="o_nama.html">O nama</a></li>
+                <li class="dropdown">
+                    <a href="usluge.html" class="dropbtn">Usluge &#9662;</a>
+                    <ul class="dropdown-content">
+                        <li><a href="snimanje.html">Snimanje</a></li>
+                        <li><a href="fotografiranje.html">Fotografiranje</a></li>
+                    </ul>
+                </li>
+                <li><a href="proces.html">Proces</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content-section text-center">
+        <h1>video snimanje</h1>
+    </section>
+
+    <section class="content-section text-center">
+        <div class="cta-card"><img src="images/pogled.jpg" alt="Video snimanje"></div>
+        <br><br>
+
+        <p class="subtitle">Kvalitetan video zapis donosi pokret, emociju i osjećaj prostora koji potiču reakciju gledatelja.<br>
+            U Frameyju stvaramo video materijale koji nisu samo vizualno atraktivni, već imaju svoju svrhu.<br><br>
+            Svaki kadar i svaki projekt pažljivo planiramo prema vašim ciljevima, lokaciji i priči koju želimo ispričati.
+        </p>
+
+    </section>
+    <hr class="divider">
+
+    <section class="content-section text-center">
+        <h2>ŠTO SNIMAMO?</h2>
+        <p class="subtitle">Profesionalna video produkcija prilagođena vašem projektu i viziji.</p>
+
+        <div class="vertical-line"></div>
+
+        <section class="split-section">
+            <div class="split-text">
+                <h2>NEKRETNINE I LOKACIJE</h2>
+                <p>
+                    Kroz dinamiku videa i pažljivo odabrane kutove snimanja naglašavamo prostranost, arhitekturu i ambijent nekretnine. 
+                    Pomažemo potencijalnim kupcima ili klijentima da dožive prostor na najbolji mogući način.
+                </p>
+                <p>
+                    Tražimo kadrove koji najbolje prenose atmosferu, funkcionalnost i jedinstveni karakter svakog prostora.
+                </p>
+            </div>
+
+            <div class="split-image">
+                <img src="images/budimpesta.jpg" alt="Snimanje nekretnina i lokacija">
+            </div>
+        </section>
+
+        <div class="vertical-line"></div>
+
+        <section class="split-section">
+            <div class="split-text">
+                <h2>DOGAĐAJE</h2>
+                <p>
+                    Bilježimo ključne trenutke, spontanu energiju i atmosferu vaših važnih događaja.
+                </p>
+                <p>
+                    Stvaramo dinamične video zapise i promo videa koji čuvaju uspomene ili služe kao vrhunski materijal za promociju budućih Eventa.
+                </p>
+            </div>
+
+            <div class="split-image">
+                <img src="images/concert.jpg" alt="Snimanje događaja">
+            </div>
+        </section>
+
+    </section>
+
+    <hr class="divider">
+
+    <section class="content-section">
+        <div class="cta-card">
+            <img src="images/footer.jpg" alt="Pozadina">
+            <div class="cta-content">
+                <h2>SPREMNI ZA NOVU PERSPEKTIVU?</h2>
+                <p>Kontaktirajte nas i dogovorite snimanje već danas.</p>
+                <a href="kontakt.html" class="btn btn-white">KONTAKTIRAJTE NAS</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="images/logotip.svg" alt="Framey Logo">
+        </div>
+        <ul class="footer-links">
+            <li><a href="o_nama.html">O nama</a></li>
+            <li><a href="usluge.html">Usluge</a></li>
+            <li><a href="proces.html">Proces</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
