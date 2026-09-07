@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPFRAME - Snimanje</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/logotip.png" alt="UPFRAME Logo"></a>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Otvori izbornik">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="o_nama.html">O nama</a></li>
+                <li class="dropdown">
+                    <a href="usluge.html" class="dropbtn">Usluge &#9662;</a>
+                    <ul class="dropdown-content">
+                        <li><a href="snimanje.html">Snimanje</a></li>
+                        <li><a href="fotografiranje.html">Fotografiranje</a></li>
+                    </ul>
+                </li>
+                <li><a href="proces.html">Proces</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content-section text-center">
+        <h1>snimanje dronom</h1>
+
+        </div>
+    </section>
+
+    <section class="content-section text-center">
+        <div class="cta-card"><img src="images/snim.jpg" alt="Rad 1"></div>
+        <br><br>
+
+        <p class="subtitle">Video iz zraka donosi pokret, širinu i osjećaj prostora koji klasične snimke ne mogu uvijek
+            prenijeti.
+            U UPFRAME-u stvaramo snimke koje nisu samo vizualno atraktivne, već imaju svrhu.<br><br>
+            Svaki let i svaki kadar planiramo
+            prema projektu, lokaciji i priči koju želimo ispričati.
+        </p>
+
+    </section>
+    <hr class="divider">
+
+    <section class="content-section text-center">
+        <h2>što snimamo?</h2>
+        <p class="subtitle">Video iz zraka donosi pokret, širinu i osjećaj prostora koji klasične
+            snimke ne mogu uvijek prenijeti. U UPFRAME-u stvaramo snimke koje nisu samo vizualno
+            atraktivne, već imaju svrhu. Svaki let i svaki kadar planiramo prema projektu, lokaciji
+            i priči koju želimo ispričati.</p>
+
+        <div class="vertical-line"></div>
+
+        <section class="split-section">
+            <div class="split-text">
+                <h2>NEKRETNINE I LOKACIJE</h2>
+                <p>
+                    Neke stvari jednostavno izgledaju drugačije kada se odmaknete.
+                    Perspektiva iz zraka omogućuje nam da prostor sagledamo kao cjelinu, naglasimo njegove razmjere i
+                    otkrijemo detalje koji iz uobičajenog kuta ostaju nevidljivi.
+                </p>
+                <p>
+                    Zato ne snimamo samo odozgo. Tražimo kadar koji najbolje prenosi atmosferu, ideju i karakter onoga
+                    što snimamo.
+                </p>
+            </div>
+
+            <div class="split-image">
+                <img src="images/lokacija.jpg" alt="Nekretnine i lokacije iz zraka">
+            </div>
+        </section>
+        <div class="vertical-line"></div>
+
+        <section class="split-section">
+            <div class="split-image">
+                <img src="images/otok1.jpg" alt="Nekretnine i lokacije iz zraka">
+            </div>
+            <div class="split-text">
+                <h2>Turizam i ugostiteljstvo</h2>
+                <p>
+                    Stvaramo sadržaj koji prenosi atmosferu destinacije i iskustvo koje ona nudi.
+                </p>
+            </div>
+        </section>
+
+        <div class="vertical-line"></div>
+
+        <section class="split-section">
+            <div class="split-text">
+                <h2>događaje</h2>
+                <p>
+                    Bilježimo trenutke, energiju i razmjere događaja iz perspektive koja omogućuje da se vidi cijela
+                    priča.
+                </p>
+            </div>
+
+            <div class="split-image">
+                <img src="images/svadba.jpg" alt="Nekretnine i lokacije iz zraka">
+            </div>
+        </section>
+
+    </section>
+
+
+
+    </section>
+
+    <hr class="divider">
+
+
+    <section class="content-section">
+        <div class="cta-card">
+            <img src="images/footer.jpg" alt="Pozadina">
+            <div class="cta-content">
+                <h2>SPREMNI ZA NOVU PERSPEKTIVU?</h2>
+                <p>Kontaktirajte nas i dogovorite snimanje već danas.</p>
+                <a href="kontakt.html" class="btn btn-white">KONTAKTIRAJTE NAS</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="images/logotip.png" alt="UPFRAME Logo">
+        </div>
+        <ul class="footer-links">
+            <li><a href="o_nama.html">O nama</a></li>
+            <li><a href="usluge.html">Usluge</a></li>
+            <li><a href="proces.html">Proces</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

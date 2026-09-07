@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPFRAME - Proces</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/logotip.png" alt="UPFRAME Logo"></a>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Otvori izbornik">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="o_nama.html">O nama</a></li>
+                <li class="dropdown">
+                    <a href="usluge.html" class="dropbtn">Usluge &#9662;</a>
+                    <ul class="dropdown-content">
+                        <li><a href="snimanje.html">Snimanje</a></li>
+                        <li><a href="fotografiranje.html">Fotografiranje</a></li>
+                    </ul>
+                </li>
+                <li><a href="proces.html">Proces</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content-section text-center">
+        <h1>Od prve ideje do<br>finalnog kadra.</h1>
+
+        </div>
+    </section>
+
+    <section class="content-section text-center">
+
+        <p class="subtitle">Dobar rezultat počinje puno prije nego što dron poleti.<br>
+
+            Svaki projekt prolazi kroz pažljivo planiran proces koji nam omogućuje da
+            razumijemo vaše potrebe, pripremimo snimanje i ostvarimo najbolji mogući rezultat.
+        </p>
+
+    </section>
+    <hr class="divider">
+
+    <section class="content-section text-center">
+        <section class="split-section">
+            <div class="split-text">
+                <h2>01 — Upoznajemo vaš projekt</h2>
+                <p>
+                    Sve počinje razgovorom.
+                    Želimo razumjeti što snimamo, kome je sadržaj namijenjen i što njime želite postići. Na temelju toga
+                    definiramo smjer projekta i pristup snimanju.
+                </p>
+            </div>
+
+            <div class="split-image">
+                <img src="images/meeting.jpg" alt="Nekretnine i lokacije iz zraka">
+            </div>
+        </section>
+        <div class="vertical-line"></div>
+
+        <section class="split-section">
+            <div class="split-text">
+                <h2>02 — Planiramo perspektivu</h2>
+                <p>
+                    Analiziramo lokaciju, uvjete i mogućnosti snimanja.
+                    Planiramo kadrove, pokrete i vrijeme snimanja kako bismo iskoristili potencijal prostora i pronašli
+                    najbolju perspektivu.
+                </p>
+            </div>
+
+            <div class="split-image">
+                <img src="images/istrazivanje.jpg" alt="Nekretnine i lokacije iz zraka">
+            </div>
+        </section>
+        <div class="vertical-line"></div>
+
+        <section class="split-section">
+            <div class="split-text">
+                <h2>03 — Letimo i snimamo</h2>
+                <p>
+                    Kada je sve spremno, ideja prelazi u kadar.
+                    Precizno i pažljivo snimamo materijal, prilagođavajući se lokaciji i uvjetima kako bismo dobili
+                    najbolje moguće rezultate.
+                </p>
+            </div>
+
+            <div class="split-image">
+                <img src="images/drone.jpg" alt="Nekretnine i lokacije iz zraka">
+            </div>
+        </section>
+        <div class="vertical-line"></div>
+
+        <section class="split-section">
+            <div class="split-text">
+                <h2>04 — Finaliziramo materijal</h2>
+                <p>
+                    Odabrani materijal pripremamo za njegovu konačnu namjenu. Rezultat su profesionalni vizuali spremni
+                    za dijeljenje, promociju i predstavljanje vašeg projekta.
+                </p>
+            </div>
+
+            <div class="split-image">
+                <img src="images/editing.jpg" alt="Nekretnine i lokacije iz zraka">
+            </div>
+        </section>
+    </section>
+
+
+
+    </section>
+
+    <hr class="divider">
+
+
+    <section class="content-section">
+        <div class="cta-card">
+            <img src="images/footer.jpg" alt="Pozadina">
+            <div class="cta-content">
+                <h2>SPREMNI ZA NOVU PERSPEKTIVU?</h2>
+                <p>Kontaktirajte nas i dogovorite snimanje već danas.</p>
+                <a href="kontakt.html" class="btn btn-white">KONTAKTIRAJTE NAS</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="images/logotip.png" alt="UPFRAME Logo">
+        </div>
+        <ul class="footer-links">
+            <li><a href="o_nama.html">O nama</a></li>
+            <li><a href="usluge.html">Usluge</a></li>
+            <li><a href="proces.html">Proces</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </footer>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+
+</html>

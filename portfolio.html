@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPFRAME - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/logotip.png" alt="UPFRAME Logo"></a>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Otvori izbornik">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="o_nama.html">O nama</a></li>
+                <li class="dropdown">
+                    <a href="usluge.html" class="dropbtn">Usluge &#9662;</a>
+                    <ul class="dropdown-content">
+                        <li><a href="snimanje.html">Snimanje</a></li>
+                        <li><a href="fotografiranje.html">Fotografiranje</a></li>
+                    </ul>
+                </li>
+                <li><a href="proces.html">Proces</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content-section text-center">
+        <h1>Portfolio</h1>
+
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <section class="content-section text-center">
+        <h2>Perspektiva koja<br>govori sama za sebe.</h2>
+        <p class="subtitle">Svaki projekt donosi novu priču, lokaciju i izazov.<br>
+            Pogledajte neke od trenutaka i prostora koje smo zabilježili iz zraka.</p>
+        <br>
+
+
+        <div class="cards-grid grid-3">
+            <div class="card"><img src="images/otok1.jpg" alt="Rad 1"></div>
+            <div class="card"><img src="images/planina.jpg" alt="Rad 2"></div>
+            <div class="card"><img src="images/event.jpg" alt="Rad 3"></div>
+            <div class="card"><img src="images/otok2.jpg" alt="Rad 1"></div>
+            <div class="card"><img src="images/svadba.jpg" alt="Rad 2"></div>
+            <div class="card"><img src="images/drone.jpg" alt="Rad 3"></div>
+            <div class="card"><img src="images/lokacija.jpg" alt="Rad 1"></div>
+            <div class="card"><img src="images/dron1.jpg" alt="Rad 2"></div>
+            <div class="card"><img src="images/dron2.jpg" alt="Rad 3"></div>
+            <div class="card"><img src="images/dron3.jpg" alt="Rad 1"></div>
+            <div class="card"><img src="images/dron4.jpg" alt="Rad 2"></div>
+            <div class="card"><img src="images/istrazivanje.jpg" alt="Rad 3"></div>
+
+        </div>
+
+    </section>
+    <hr class="divider">
+
+    <section class="content-section">
+        <div class="cta-card">
+            <img src="images/footer.jpg" alt="Pozadina">
+            <div class="cta-content">
+                <h2>SPREMNI ZA NOVU PERSPEKTIVU?</h2>
+                <p>Kontaktirajte nas i dogovorite snimanje već danas.</p>
+                <a href="kontakt.html" class="btn btn-white">KONTAKTIRAJTE NAS</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="images/logotip.png" alt="UPFRAME Logo">
+        </div>
+        <ul class="footer-links">
+            <li><a href="o_nama.html">O nama</a></li>
+            <li><a href="usluge.html">Usluge</a></li>
+            <li><a href="proces.html">Proces</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </footer>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+
+
+</html>
